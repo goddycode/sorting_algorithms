@@ -1,14 +1,14 @@
 #include "sort.h"
 /**
- * insertion_sort_list - sort elements of doubling linklist
- * based on Insertion sort algorithm in ascending order
- *@list: pointer to the list head
- *Return: Always nothing
- */
+ * insertion_sort_list - sorts a doubly linked list of integers
+ * in ascending order using the Insertion sort ailgorithm
+ * @list: pointer to the list head
+ * Return: no return
+ **/
 void insertion_sort_list(listint_t **list)
 {
+	int myflag
 	listint_t *head_tmp1, *head_tmp2, *myaux1, *myaux2;
-	int myflag;
 
 	if (list)
 	{
@@ -26,7 +26,7 @@ void insertion_sort_list(listint_t **list)
 					myaux2 = head_tmp2->next;
 					myaux1->next = myaux2->next;
 					if (myaux2->next)
-						myaux2->next->prev =my aux1;
+						myaux2->next->prev = myaux1;
 					if (myaux2)
 					{
 						myaux2->prev = myaux1->prev;

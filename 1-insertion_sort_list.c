@@ -7,7 +7,7 @@
  **/
 void insertion_sort_list(listint_t **list)
 {
-	int myflag
+	int myflag;
 	listint_t *head_tmp1, *head_tmp2, *myaux1, *myaux2;
 
 	if (list)
